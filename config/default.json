@@ -1,0 +1,6 @@
+{
+    "app_name": "my_portfolio",
+    "db": "mongodb://localhost/portfolio",
+    "jwtPassword": "",
+    "expiresIn": "3600000000000"
+}
