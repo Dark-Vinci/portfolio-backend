@@ -11,3 +11,15 @@
 {"message":"connected to mongodb://localhost/portfolio","level":"info"}
 {"message":"connected to mongodb://localhost/portfolio","level":"info"}
 {"message":"connected to mongodb://localhost/portfolio","level":"info"}
+{"message":"listening at port 1212","level":"info"}
+{"message":"listening at port 1212","level":"info"}
+{"message":"connected to mongodb://localhost/portfolio","level":"info"}
+{"message":"listening at port 1212","level":"info"}
+{"message":"connected to mongodb://localhost/portfolio","level":"info"}
+{"message":"listening at port 1212","level":"info"}
+{"message":"connected to mongodb://localhost/portfolio","level":"info"}
+{"errors":{"star":{"name":"ValidatorError","message":"Path `star` (4) is less than minimum allowed value (5).","properties":{"message":"Path `star` (4) is less than minimum allowed value (5).","type":"min","min":5,"path":"star","value":4},"kind":"min","path":"star","value":4}},"_message":"Food validation failed","level":"error","name":"ValidationError","message":"Food validation failed: star: Path `star` (4) is less than minimum allowed value (5)."}
+{"message":"listening at port 1212","level":"info"}
+{"message":"connected to mongodb://localhost/portfolio","level":"info"}
+{"message":"listening at port 1212","level":"info"}
+{"message":"connected to mongodb://localhost/portfolio","level":"info"}

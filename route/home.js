@@ -7,6 +7,7 @@ const router = express.Router();
 
 const { Admin, validate, validateLogin } = require('../model/admin');
 const { Message, validateMessage } = require('../model/message');
+const { validateFood, Food } = require('../model/food');
 
 const wrapper = require('../middleware/wrapper');
 const auth = require('../middleware/auth');
@@ -84,6 +85,31 @@ router.post('/message', bodyValidator(validateMessage), wrapper ( async ( req, r
         status: 201,
         message: 'success',
         data: 'submitted'
+    });
+}));
+
+router.post('/create-food', bodyValidator(validateFood), wrapper ( async (req, res) => {
+    const { url, price, star, title } = req.body;
+
+    const food = new Food({ url, price, star, title });
+
+    await food.save();
+
+    res.status(201).json({ 
+        status: 201,
+        message: 'message',
+        data: food
+    });
+}));
+
+router.get('/get-food', wrapper ( async (req, res) => {
+    const food = await Food.find();
+
+    console.log(food.length);
+    res.status(200).json({
+        status: 200,
+        message: 'success',
+        data: food
     });
 }));
 
