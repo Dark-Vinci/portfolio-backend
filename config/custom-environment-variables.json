@@ -1,4 +1,6 @@
 {
     "app_name": "my_portfolio",
-    "jwtPassword": "jwtKey"
+    "jwtPassword": "jwtKey",
+    "db": "db",
+    "expiresIn": "expiresIn"
 }
